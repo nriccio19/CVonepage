@@ -5073,6 +5073,7 @@ header a.down-arrow img {
 
 .about img.picture {
   float: right;
+  max-width: 100%;
 }
 
 .about .social-networks {
