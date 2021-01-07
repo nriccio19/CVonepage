@@ -5190,6 +5190,12 @@ header a.down-arrow img {
   height: calc(100% - 4.375rem);
 }
 
+@media (max-width: 767.98px) {
+  .experience article {
+    padding-top: 4rem;
+  }
+}
+
 .experience article .period {
   position: absolute;
   height: 4.375rem;

@@ -264,6 +264,9 @@ header {
     background-color: #282828;
     padding: 1.25rem 2.1875rem 3.4375rem;
     height: calc(100% - 4.375rem);
+    @media (max-width: 767.98px) {
+      padding-top: 4rem;
+    }
 
     .period {
       position: absolute;
