@@ -87,6 +87,8 @@ header {
     }
 
     .navbar {
+      display: block;
+
       ul {
         float: right;
 
@@ -179,6 +181,7 @@ header {
     float: right;
     max-width: 100%;
   }
+
   .social-networks {
     text-align: center;
 
@@ -215,10 +218,16 @@ header {
 
     .percent {
       @include font(6.25rem, 700, 6.25rem, #ccc);
+      @media (max-width: 767.98px) {
+        display: none;
+      }
     }
     .progress-container {
       flex-basis: 100%;
       padding-left: 2rem;
+      @media (max-width: 767.98px) {
+        padding: 0 2rem;
+      }
 
       strong {
         @include font(1.25rem, 700, 1.25rem, #f3f3f3);
@@ -236,6 +245,7 @@ header {
     }
   }
 }
+
 // Mes expériences professionnelles--
 
 .experience {
@@ -253,6 +263,7 @@ header {
     margin-top: 4.375rem;
     background-color: #282828;
     padding: 1.25rem 2.1875rem 3.4375rem;
+    height: calc(100% - 4.375rem);
 
     .period {
       position: absolute;

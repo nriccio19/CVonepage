@@ -29,7 +29,7 @@ $(function () {
       $("html,body").animate({scrollTop: section.offset().top}, 'slow');
     });
   
-    // On gère l'animation des progress-bar pour le scompétences
+    // On gère l'animation des progress-bar pour les compétences
     window.sr = ScrollReveal();
     sr.reveal('.progress-bar', {
       origin: 'left',

@@ -4954,6 +4954,10 @@ header .logonavbar .logo h2 {
   margin-top: 1.875rem;
 }
 
+header .logonavbar .navbar {
+  display: block;
+}
+
 header .logonavbar .navbar ul {
   float: right;
 }
@@ -5130,10 +5134,22 @@ header a.down-arrow img {
   color: #ccc;
 }
 
+@media (max-width: 767.98px) {
+  .skill .flex .percent {
+    display: none;
+  }
+}
+
 .skill .flex .progress-container {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding-left: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .skill .flex .progress-container {
+    padding: 0 2rem;
+  }
 }
 
 .skill .flex .progress-container strong {
@@ -5171,6 +5187,7 @@ header a.down-arrow img {
   margin-top: 4.375rem;
   background-color: #282828;
   padding: 1.25rem 2.1875rem 3.4375rem;
+  height: calc(100% - 4.375rem);
 }
 
 .experience article .period {
